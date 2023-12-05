@@ -1,0 +1,314 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Utilities */
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+.btn {
+  padding: 15px 35px;
+  border-radius: 30px;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.bg-green {
+  background: var(--Strong-Cyan);
+  box-shadow: 0px 5px 10px -5px hsl(171, 66%, 44%);
+}
+
+.bg-blue {
+  background: var(--Light-Blue);
+  box-shadow: 0px 5px 10px -5px hsl(233, 100%, 69%);
+}
+
+.bg-green:hover {
+  background: hsl(171, 48%, 62%);
+}
+.bg-blue:hover {
+  background: hsl(233, 72%, 76%);
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Main Styling*/
+body {
+  max-width: 1440px;
+  background-color: #fff;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 400 600;
+  font-size: 18px;
+}
+
+ #container {
+  max-width: 100%;
+ }
+ 
+ #container .header {
+  height: fit-content;
+  background: url('./images/bg-header-desktop.png') no-repeat center center/cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container .header img {
+  max-width: 100px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+#container .header .header-content {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#container .header h1 {
+  font-size: 2.4rem;
+}
+
+#container .header .header-content p {
+  margin-bottom: 40px;
+  color: var(--Grayish-Blue);
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+.header .btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.clipboard-snippet {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.clipboard-snippet .snippet-1 {
+  width: 620px;
+  text-align: center;
+  align-self: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.snippet-1 p {
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+.clipboard-snippet .snippet-2 {
+  display: flex;
+}
+
+.snippet-2 img {
+  height: 550px;
+  margin-left: -50px;
+  margin-right: 50px;
+}
+
+.snippet-2 .snippet-list {
+  width: 350px;
+  display: flex;
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.snippet-2 .snippet-list ul li {
+  margin-bottom: 50px;
+}
+
+.snippet-2 .snippet-list ul li h3 {
+  margin-bottom: 10px;
+}
+
+.snippet-2 .snippet-list ul li p {
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.description .description-text {
+  width: 650px;
+  margin-bottom: 100px;
+}
+
+.description .description-text p {
+  color: var(--Grayish-Blue);
+  line-height: 1.7rem;
+  font-size: 1.1rem;
+}
+
+.description img {
+  width: 900px;
+}
+
+/* Workflow */
+.workflow {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.workflow .workflow-heading h2 {
+  margin-bottom: 20px;
+}
+
+.workflow .workflow-heading p {
+  color: var(--Grayish-Blue);
+  font-size: 0.9rem;
+}
+
+.workflow .workflow-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 100px;
+}
+
+.workflow-items .item {
+  padding: 10px;
+  flex: 1;
+}
+
+.workflow-items .item img {
+  margin-bottom: 40px;
+}
+
+.workflow-items .item p {
+  font-size: 0.9rem;
+  color: var(--Grayish-Blue);
+  margin-top: 20px;
+  line-height: 1.7rem;
+  width: 320px;
+}
+
+#container .partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 150px;
+}
+
+#container .partners .partner {
+  padding: 50px;
+}
+
+.devices {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.devices h1 {
+  margin-top: 50px;
+}
+
+.devices p {
+  margin-bottom: 50px;
+  width: 650px;
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+.devices .btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 100px;
+}
+
+body footer {
+  padding: 50px 100px;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body footer img {
+  max-width: 50px;
+}
+
+body footer .info {
+  display: flex;
+  flex: 2;
+  margin: auto;
+}
+
+body footer .info .info-detail {
+  padding: 0 50px;
+}
+
+body footer .info .info-detail ul li {
+  padding: 10px 0;
+  font-size: 1rem;
+  color: var(--Dark-Grayish-Blue);
+}
+
+body footer .info .info-detail ul li a:hover {
+  color: var(--Strong-Cyan);
+}
+
+body footer .socials {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+body footer .socials i {
+  margin: 0 10px;
+  color: var(--Dark-Grayish-Blue);
+}
+
+body footer .socials i:hover {
+  color: var(--Strong-Cyan);
+}
