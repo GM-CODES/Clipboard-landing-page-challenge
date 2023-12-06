@@ -34,12 +34,8 @@ body {
 }
 
 .header .btn-group {
-  display: block;
-  margin: auto;
-  width: 100%;
-}
-
-.header .btn-group {
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
   width: 100%;
 }
 
@@ -151,7 +147,9 @@ body {
 }
 
 .devices .btn-group {
-  display: block;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
+  width: 100%;
 }
 
 body footer {
